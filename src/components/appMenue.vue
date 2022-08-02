@@ -12,9 +12,44 @@
         <el-menu-item index="3"><img src="../assets/我的.svg" class="pic">团队管理</el-menu-item>
     </el-menu>
     <div class="avatar">
-        <el-avatar src="https://cube.elemecdn.com/0/88/03b0d39583f48206768a7534e55bcpng.png" size="30px"></el-avatar>
+        <el-popover placement="right" title="" :width="200" trigger="hover">
+            <template #reference>
+                <el-avatar :src="this.imageUrl" class="avaPic"></el-avatar>
+            </template>
+            <template #default>
+                <div class="demo-rich-conent" style="display: flex; gap: 16px; flex-direction: column">
+                    <el-avatar :size="60" :src="this.imageUrl" style="margin-bottom: 8px" />
+                    <div>
+                        <p class="demo-rich-content__name" style="margin: 0; font-weight: 500">
+                            {{ this.name }}
+                        </p>
+                        <p class="demo-rich-content__mention"
+                            style="margin: 0; font-size: 14px; color: var(--el-color-info)">
+                            {{ this.email }}
+                        </p>
+                    </div>
+
+                    <p class="demo-rich-content__desc" style="margin: 0">
+                        我是傻逼
+                    </p>
+                    <el-button type="danger" round size="small">退出登录</el-button>
+                </div>
+            </template>
+        </el-popover>
     </div>
 </template>
+<script>
+export default {
+
+    data() {
+        return {
+            name: "JKM",
+            imageUrl: "https://cube.elemecdn.com/0/88/03b0d39583f48206768a7534e55bcpng.png",
+            email: "zhehe532@gmail.com"
+        };
+    }
+}
+</script>
 <style>
 .logo {
     height: 80px;
@@ -33,6 +68,7 @@
 
 .pic {
     height: 30px;
+
 }
 
 .menu {
@@ -44,7 +80,14 @@
 
 .avatar {
     height: 80px;
-
+    text-align: center;
     width: 150px;
+}
+
+.avatar .avaPic {
+    height: 45px;
+    width: auto;
+    box-shadow: 0 0 5px #000;
+    margin-top: 5px;
 }
 </style>
