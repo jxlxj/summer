@@ -4,12 +4,13 @@
     </div>
     <el-menu class="menu" default-active="1" background-color="#ffffff" text-color="#606266" active-text-color="#2F74FF"
         router>
-        <el-menu-item index="1"><img src="../assets/文件夹.svg" class="pic">设计原型
+        <el-menu-item index="1"><img src="../assets/文件夹.svg" class="pic">
+            <span class="text">设计原型</span>
         </el-menu-item>
-        <el-menu-item index="2"><img src="../assets/订单.svg" class="pic">文档
+        <el-menu-item index="2"><img src="../assets/订单.svg" class="pic"><span class="text">文档</span>
         </el-menu-item>
-        <el-menu-item index="about"><img src="../assets/相册.svg" class="pic">图绘制</el-menu-item>
-        <el-menu-item index="3"><img src="../assets/我的.svg" class="pic">团队管理</el-menu-item>
+        <el-menu-item index="about"><img src="../assets/相册.svg" class="pic"><span class="text">图绘制</span></el-menu-item>
+        <el-menu-item index="3"><img src="../assets/我的.svg" class="pic"><span class="text">团队管理</span></el-menu-item>
     </el-menu>
     <div class="avatar">
         <el-popover placement="right" title="" :width="200" trigger="hover">
@@ -68,7 +69,11 @@ export default {
 
 .pic {
     height: 30px;
+    margin-bottom: 3px;
+}
 
+.text {
+    margin-left: 5px;
 }
 
 .menu {
