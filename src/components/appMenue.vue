@@ -1,0 +1,50 @@
+<template>
+    <div class="logo">
+        <h1>墨书</h1>
+    </div>
+    <el-menu class="menu" default-active="1" background-color="#ffffff" text-color="#606266" active-text-color="#2F74FF"
+        router>
+        <el-menu-item index="1"><img src="../assets/文件夹.svg" class="pic">设计原型
+        </el-menu-item>
+        <el-menu-item index="2"><img src="../assets/订单.svg" class="pic">文档
+        </el-menu-item>
+        <el-menu-item index="about"><img src="../assets/相册.svg" class="pic">图绘制</el-menu-item>
+        <el-menu-item index="3"><img src="../assets/我的.svg" class="pic">团队管理</el-menu-item>
+    </el-menu>
+    <div class="avatar">
+        <el-avatar src="https://cube.elemecdn.com/0/88/03b0d39583f48206768a7534e55bcpng.png" size="30px"></el-avatar>
+    </div>
+</template>
+<style>
+.logo {
+    height: 80px;
+
+    width: 150px;
+
+}
+
+.logo h1 {
+    font-family: "xie";
+    text-align: center;
+    line-height: 80px;
+    font-size: 35px;
+    cursor: default
+}
+
+.pic {
+    height: 30px;
+}
+
+.menu {
+    width: 150px;
+    min-height: calc(100vh - 160px);
+    font-family: "zheng";
+
+}
+
+.avatar {
+    height: 80px;
+
+    width: 150px;
+}
+</style>

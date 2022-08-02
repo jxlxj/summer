@@ -1,9 +1,5 @@
 <template>
-  <div class="home">
-    <h1>墨书墨书墨书</h1>
-    <img alt="Vue logo" src="../assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
-  </div>
+  <el-main>HomeView</el-main>
 </template>
 
 <script>

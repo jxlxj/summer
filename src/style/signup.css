@@ -1,0 +1,73 @@
+#bg-signup {
+    background: url("../assets/bg-signup.png");
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-size: 100% 100%;
+}
+
+.signup-box {
+    width: 300px;
+    padding: 40px;
+    /* 内边界宽度  */
+    position: absolute;
+    /* 设置为绝对定位，使下方的top和left生效  */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* 作用见后方描述  */
+    background-color: #ffffff;
+    /* 设置背景颜色  */
+    text-align: center;
+    box-shadow: rgb(139, 139, 139) 5px 5px 15px 5px;
+    /* 表单中内容居中  */
+    border-radius: 10px;
+}
+
+.signup-box h1 {
+    font-family: "zhengfang";
+    font-size: 50px;
+}
+
+.signup-box .username,
+.signup-box .password,
+.signup-box .email {
+    border-radius: 14px;
+    /* 边框四个角的弧度  */
+    border: 2px solid #000000;
+    /* 边框厚度和颜色  */
+    background: none;
+    display: block;
+    margin: 20px auto;
+    /* 外边界  */
+    text-align: center;
+    padding: 14px 10px;
+    /* 内边界  */
+    width: 200px;
+    outline: none;
+    color: rgb(0, 0, 0);
+    /* 设置输入框中竖线的颜色 */
+    transition: 0.25s;
+    /* 设置元素过渡效果 */
+}
+
+.signup-box .username:focus,
+.signup-box .password:focus,
+.signup-box .email:focus {
+    border-color: #0004ff;
+    /* 边框颜色  */
+}
+
+.signup-box .signup {
+    border-radius: 14px;
+    border: 2px solid #000000;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    padding: 10px 30px;
+    outline: none;
+    transition: 0.25s;
+    cursor: pointer;
+    color: #000000;
+    /* 设置光标的样式 */
+}

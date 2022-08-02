@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: "zheng";
+    src: url("./../fonts/h1.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "xie";
+    src: url("./../fonts/1.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}

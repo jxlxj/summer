@@ -1,0 +1,81 @@
+input::placeholder {
+    color: #000000 !important;
+}
+
+#building {
+    background: url("../assets/background.png");
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-size: 100% 100%;
+}
+
+.form-box {
+    width: 300px;
+    padding: 40px;
+    /* 内边界宽度  */
+    position: absolute;
+    /* 设置为绝对定位，使下方的top和left生效  */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* 作用见后方描述  */
+    background-color: #ffffff;
+    /* 设置背景颜色  */
+    text-align: center;
+    /* 表单中内容居中  */
+    border-radius: 10px;
+    box-shadow: rgb(139, 139, 139) 5px 5px 15px 5px;
+}
+
+.form-box h1 {
+    font-family: 'zheng';
+    font-size: 50px;
+    color: rgb(0, 0, 0);
+    /* 将字体全部设置成大写字母  */
+}
+
+.form-box .username,
+.form-box .password {
+    border-radius: 14px;
+    /* 边框四个角的弧度  */
+    border: 2px solid #000000;
+    /* 边框厚度和颜色  */
+    background: none;
+    display: block;
+    margin: 20px auto;
+    /* 外边界  */
+    text-align: center;
+    padding: 14px 10px;
+    /* 内边界  */
+    width: 200px;
+    outline: none;
+    color: rgb(0, 0, 0);
+    /* 设置输入框中竖线的颜色 */
+    transition: 0.25s;
+    /* 设置元素过渡效果 */
+}
+
+.form-box .username:focus,
+.form-box .password:focus {
+    border-color: #0004ff;
+    /* 边框颜色  */
+}
+
+.form-box .login {
+    border-radius: 14px;
+    border: 2px solid #000000;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    padding: 14px 40px;
+    outline: none;
+    transition: 0.25s;
+    cursor: pointer;
+    color: #000000;
+    /* 设置光标的样式 */
+}
+
+.form-box .signup {
+    color: #000000;
+}
