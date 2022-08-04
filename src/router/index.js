@@ -34,6 +34,13 @@ const routes = [
     component: function () {
       return import('../views/login.vue')
     }
+  },
+  {
+    path: '/teamManagement',
+    name: 'teamManagement',
+    component: function () {
+      return import('../views/teamManagement.vue')
+    }
   }
 ]
 

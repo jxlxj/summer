@@ -9,8 +9,10 @@
         </el-menu-item>
         <el-menu-item index="2"><img src="../assets/订单.svg" class="pic"><span class="text">文档</span>
         </el-menu-item>
-        <el-menu-item index="about"><img src="../assets/相册.svg" class="pic"><span class="text">图绘制</span></el-menu-item>
-        <el-menu-item index="3"><img src="../assets/我的.svg" class="pic"><span class="text">团队管理</span></el-menu-item>
+        <el-menu-item index="about"><img src="../assets/相册.svg" class="pic"><span class="text">图绘制</span>
+        </el-menu-item>
+        <el-menu-item index="teamManagement"><img src="../assets/我的.svg" class="pic"><span class="text">团队管理</span>
+        </el-menu-item>
     </el-menu>
     <div class="avatar">
         <el-popover placement="right" title="" :width="200" trigger="hover">
@@ -31,7 +33,7 @@
                     </div>
 
                     <p class="demo-rich-content__desc" style="margin: 0">
-                        我是傻逼
+                        haoduoyinliugou
                     </p>
                     <el-button type="danger" round size="small">退出登录</el-button>
                 </div>
@@ -70,6 +72,7 @@ export default {
 .pic {
     height: 30px;
     margin-bottom: 3px;
+    margin-left: 5px;
 }
 
 .text {
@@ -80,7 +83,6 @@ export default {
     width: 150px;
     min-height: calc(100vh - 160px);
     font-family: "zheng";
-
 }
 
 .avatar {

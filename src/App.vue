@@ -1,7 +1,7 @@
 <template>
   <div class="common-layout">
     <el-container>
-      <el-aside width="200px">
+      <el-aside width="160px">
         <AppMenu />
       </el-aside>
       <el-main>
@@ -12,12 +12,11 @@
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
 import AppMenu from "./components/appMenue.vue"
 export default {
   name: "App",
   components: {
-    HelloWorld, AppMenu
+    AppMenu
   },
 };
 </script>
@@ -36,7 +35,6 @@ export default {
 }
 
 .el-aside {
-
   height: 100vh;
 }
 </style>
