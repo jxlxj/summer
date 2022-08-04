@@ -11,8 +11,46 @@
 
 </template>
 
+<script>
+import api from "@/axiosConfig";
+import user from "@/userUtils";
+export default {
+  data() {
+    return {
+      username: "",
+      password: "",
+    };
+  },
+  methods: {
+    async click_login() {
+      if (this.password === "" || this.username === "") {
+        this.$message.warning("请输入用户名和密码！");
+        return;
+      }
+      await api
+        .post("/api/login", {
+          name: this.username,
+          password: this.password,
+        })
+        .then(async (res) => {
+          this.$message.success(res.data.msg);
+          if (res.data.errno === 0) {
+            await sessionStorage.setItem("token", res.data.token);
+            await user.methods.updateInfo();
 
-
+            await sessionStorage.setItem("login", "true");
+            await sessionStorage.setItem("retFromLogin", "true");
+            window.location.href = "/";
+          }
+        })
+        .catch((err) => {
+          alert(err);
+          console.log(err);
+        });
+    },
+  },
+};
+</script>
 <style scoped>
 @import "../style/login.css";
 </style>

@@ -38,8 +38,16 @@ const routes = [
   {
     path: '/teamManagement',
     name: 'teamManagement',
+    meta: { isRouterAuth: true },
     component: function () {
       return import('../views/teamManagement.vue')
+    }
+  },
+  {
+    path: '/invite',
+    name: 'invite',
+    component: function () {
+      return import('../views/invite.vue')
     }
   }
 ]

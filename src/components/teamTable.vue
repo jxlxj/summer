@@ -5,7 +5,7 @@
         <el-table-column prop="realname" label="真实姓名" />
         <el-table-column label="操作" width="200" v-if="Status === 'admin'">
             <template #default v-if="myClass === 'parti'">
-                <el-button link type="primary" size="small">移出</el-button>
+                <el-button link type="primary" size="small" @click="remove">移出</el-button>
                 <el-button link type="primary" size="small" @click="dialogIdenVisible = true"
                     v-if="Status === 'creator'">
                     身份设置
